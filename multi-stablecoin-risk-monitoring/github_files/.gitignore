@@ -1,0 +1,106 @@
+# ===========================================
+# Multi-Stablecoin Risk Monitoring System
+# Git Ignore File
+# ===========================================
+
+# Environment Variables (NEVER commit!)
+.env
+.env.local
+.env.production
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Data Files (don't commit real data)
+data/*.csv
+data/*.json
+data/*.parquet
+!data/sample_*.csv
+!data/sample_*.json
+
+# Model Files (too large for git)
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
+models/saved/
+!models/saved/.gitkeep
+
+# Logs
+logs/
+*.log
+
+# Test Coverage
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Secrets
+secrets/
+*.pem
+*.key
+
+# Temporary Files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Redis Dump
+dump.rdb
+
+# Kafka
+kafka-logs/
